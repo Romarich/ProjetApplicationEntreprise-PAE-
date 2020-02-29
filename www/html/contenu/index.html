@@ -1,0 +1,42 @@
+	<div class="text-center divGene" id="bodyConnexion">
+	Mettre tous les display a none et puis apres on met pas !none lorsqu'on se co
+		<div style="margin-top: 9%">	
+			<img src="images/logo.png" alt="logo de l'application">
+			<h3>Le voyage de toute une vie !</h3>
+		</div>
+		<div class="container col-md-3" style="margin-top: 4%">
+			<div id="message"></div>
+			<form class="text-center">
+				<label>Pseudo : </label><input type="text" class="form-control" id="pseudo" placeholder="Pseudo"/>
+				<label>Mot de passe : </label><input type="password" class="form-control" id="motDePasse" placeholder="Mot de passe"/>			
+				<div style="margin-top: 5%">
+					<input type="button" class="btn btn-outline-secondary" name="inscrire" value="S'inscrire" id="inscription">
+					<input type="button" class="btn btn-outline-primary" name="connexion" id="connexion" value="Se connecter">
+				</div>
+			</form>
+		</div>
+	
+	</div>
+	
+	
+	
+	<div class="text-center divGene" id="bodyInscription" style="display:none">
+		<img src="images/logo.png" alt="logo de l'application">
+		<h3>Le voyage de toute une vie !</h3>
+		<div class="container col-md-3 text-center" style="margin-top: 4%">
+			<div id="messageInscr"></div> 
+			<label>Pseudo : </label><input type="text" class="form-control" id="pseudoInscr" placeholder="Pseudo">
+			<label>Nom : </label><input type="text" class="form-control" id="nom" placeholder="Nom">
+			<label>Prénom : </label><input type="text" class="form-control" id="prenom" placeholder="Prénom">
+			<label>Email : </label><input type="text" class="form-control" id="email" placeholder="Email">
+			<label>Mot de passe : </label><input type="password" class="form-control" id="motDePasseInscr" placeholder="Mot de passe">
+			<label>Confirmation mot de passe : </label><input type="password" class="form-control" id="confirmationMdp" placeholder="Mot de passe">
+			<img src="./images/flecheRetour.png" id="btnFlecheRetour">
+			<input type="button" class="btn btn-outline-primary" name="enregistrer" id="senregistrer" value="S'enregistrer">
+		</div>
+	</div>
+	
+	
+	<div class="center divGene" style='display:none' id="bodyEtudiant">
+	</div>
+	<script type="text/javascript" src="./scriptsJS/pageLogin.js"></script>

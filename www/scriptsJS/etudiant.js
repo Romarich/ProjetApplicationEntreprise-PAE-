@@ -1,0 +1,1 @@
+$("#baniere").load("barrePageEtudiant.html");

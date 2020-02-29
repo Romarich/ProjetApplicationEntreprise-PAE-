@@ -1,0 +1,98 @@
+ <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <style>
+.boutonmenuprincipal {
+	background-color: #e83737;
+	color: white;
+	border: none;
+	cursor: pointer;
+	position: relative;
+}
+.boutonmenuprincipal:hover {
+	background-color: #ff4444;
+}
+.dropdown {
+	position: relative;
+}
+.dropdown-child {
+	display: none;
+	background-color: white;
+	min-width: 50px;
+}
+.dropdown-child a {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+.dropdown:hover .dropdown-child {
+	display: block;
+	z-index:1;
+}
+</style>
+
+
+  </head>
+  <body>
+  <nav class="navbar navbar-light" style="background-color: #b0ccfc;">
+  <div class="row">
+      <div class="col" align="center">
+    	 <img src="./images/transparent.png">
+      </div>
+      <div class="col" align="center">
+  		<button type="button" class="btn btn-warning btn-lg">Demandes et Mobilités</button>
+  	  </div>
+  	  <div class="col" align="center">
+  		<button type="button" class="btn btn-warning btn-lg">Introduire une demande</button>
+  	</div>
+  	  <div class="col" align="center">	
+  		<button type="button" class="btn btn-warning btn-lg">Mon compte</button>
+  	</div>
+  	  <div class="col" align="center">
+    <form class="form-inline my-2 my-lg-0">
+      <div class="dropdown">
+        <input class="navbar-form navbar-left form-control mr-sm-2 dropdown-toggle" id="barreDeRecherche" data-toggle="dropdown" ariahashpopup="true" aria-expanded="false" type="search" placeholder="Rechercher..." aria-label="Rechercher" style="width: 400px;">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <div class="container">
+            <ul class="nav nav-pills">
+              <li><a href="#" class="nav-link active" id="tout">Tout</a></li>
+              <li><a href="#" class="nav-link" id="partenaire">Partenaire</a></li>
+              <li><a href="#" class="nav-link" id="mobilite">Mobilités</a></li>
+              <li><a href="#" class="nav-link" id="etudiant">Etudiants</a></li>
+            </ul>
+          </div>
+        
+        <!--<a><button>Tout</button><button>Partenaire</button><button>Mobilités</button><button>Etudiants</button></a>-->
+           <div class="dropdown-divider">Etudiants</div>
+              <p class="dropdown-item">Element1</p>
+           <div class="dropdown-divider">Partenaires</div>
+             <p class="dropdown-item">Element2</p>
+           <div class="dropdown-divider">Mobilités</div>
+             <p class="dropdown-item">Element3</p>
+
+         </div>
+      </div>
+      <!--<a class="btn my-2 my-sm-0" type="submit"><img src="./images/loupe.png"></a>-->
+      
+    </form>
+    </div>
+    <div class="col" align="center">
+    <img src="./images/logout.png" id="btn_deconnexion">   
+    </div>
+    </div>
+	</nav>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="./styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./scriptsJS/barreDeRecherche.js"></script>
